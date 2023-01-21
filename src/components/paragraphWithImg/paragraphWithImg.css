@@ -1,0 +1,72 @@
+/* common styles */
+.paragraphWithImg {
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+  padding: 5% 15px;
+  text-align: justify;
+  color: white;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.paragraphWithImg img {
+  margin: 10px;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 40%);
+  border-radius: 2px;
+  transition: all 0.2s;
+}
+
+.paragraphWithImg img:hover {
+  outline: 5px solid rgba(255, 255, 255, 0.477);
+  transform: scale(1.05) translateY(-0.5rem);
+  box-shadow: 0 4px 10px rgb(0 0 0 / 50%);
+  z-index: 20;
+}
+
+/* background variants */
+.paragraphWithImgBackgroundGreen {
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(126, 213, 111),
+    rgb(40, 180, 133)
+  );
+}
+
+.paragraphWithImgBackgroundBlue {
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
+}
+.paragraphWithImgBackgroundOrange {
+  background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+}
+
+/* font variants */
+.paragraphWithImgFontLato {
+  font-family: Lato, sans-serif;
+}
+.paragraphWithImgFontCursive {
+  font-family: cursive;
+}
+.paragraphWithImgFontGill {
+  font-family: "Gill Sans", sans-serif;
+}
+
+/* img variants */
+
+/* img alignment */
+.paragraphWithImgRight img {
+  float: right;
+}
+
+.paragraphWithImgLeft img {
+  float: left;
+}
+
+/* img size */
+.paragraphWithImgSmall img {
+  width: 100px;
+}
+.paragraphWithImgMedium img {
+  width: 125px;
+}
+.paragraphWithImgLarge img {
+  width: 150px;
+}

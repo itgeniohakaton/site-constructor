@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+#nav {
+  height: 7vh;
+  border: 1px solid lightgrey;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+#app {
+  display: flex;
+}
+#panel {
+  width: 20%;
+  border-right: 1px solid lightgrey;
+  overflow-y: scroll;
+  height: 90vh;
+  padding: 10px;
+}
+#site {
+  width: 80%;
+  overflow-y: scroll;
+  height: 90vh;
+}
+
+/* flex */
+.flex {
+  display: flex;
+}
+.direction-col {
+  flex-direction: column;
+}
+.self-center {
+  align-self: center;
+}
+.justify-between {
+  justify-content: space-between;
+}

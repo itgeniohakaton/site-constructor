@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form {
+        width: 10%;
+      }
+      .form-group div {
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <form name="paragraphWithImg">
+      <h5>Paragraph With Img</h5>
+      <div>
+        <label for="paragraphWithImgLink">Img link:</label>
+
+        <input
+          id="paragraphWithImgLink"
+          name="imgLink"
+          placeholder="Img link"
+        />
+      </div>
+
+      <div>
+        <div>
+          <label for="paragraphWithImgBacground">Choose background:</label>
+
+          <select
+            name="paragraphWithImgBacground"
+            id="paragraphWithImgBacground"
+          >
+            <option value="">--Please choose an option--</option>
+            <option value="paragraphWithImgBackgroundGreen">Green</option>
+            <option value="paragraphWithImgBackgroundBlue">Blue</option>
+            <option value="paragraphWithImgBackgroundOrange">Orange</option>
+          </select>
+        </div>
+        <div>
+          <label for="paragraphWithImgFont">Choose font family:</label>
+
+          <select name="paragraphWithImgFont" id="paragraphWithImgFont">
+            <option value="">--Please choose an option--</option>
+            <option value="paragraphWithImgFontLato">Lato</option>
+            <option value="paragraphWithImgFontCursive">Cursive</option>
+            <option value="paragraphWithImgFontGill">Gill Sans</option>
+          </select>
+        </div>
+        <div>
+          <label for="paragraphWithImgAlignment">Choose img alignment:</label>
+
+          <select
+            name="paragraphWithImgAlignment"
+            id="paragraphWithImgAlignment"
+          >
+            <option value="">--Please choose an option--</option>
+            <option value="paragraphWithImgRight">Right</option>
+            <option value="paragraphWithImgLeft">Left</option>
+          </select>
+        </div>
+        <div>
+          <label for="paragraphWithImgSize">Choose img size:</label>
+
+          <select name="paragraphWithImgSize" id="paragraphWithImgSize">
+            <option value="">--Please choose an option--</option>
+            <option value="paragraphWithImgSmall">Small</option>
+            <option value="paragraphWithImgMedium">Medium</option>
+            <option value="paragraphWithImgLarge">Large</option>
+          </select>
+        </div>
+      </div>
+      <button type="submit">Add</button>
+      <hr />
+    </form>
+  </body>
+</html>
