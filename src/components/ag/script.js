@@ -48,7 +48,11 @@ function lookelem() {
 var index = document.getElementById("site");
 const elempressed = e => { 
     if(delmode == true && e.target.id !== 'site'){
-        e.target.remove()
+        let currentNode = e.target;
+        while (currentNode.parentNode.id !== 'site') {
+            currentNode = currentNode.parentNode;
+        }
+        currentNode.remove();
         delbtn.style.border = ''
         delmode = false
     }
