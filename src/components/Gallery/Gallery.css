@@ -1,0 +1,32 @@
+body{
+    overflow: hidden;
+}
+h1{
+    color: rgb(186, 45, 45);
+    z-index: 100;
+
+    text-align: center;
+}
+.images {
+    background-color: limegreen;
+    height: 100vh;
+    width: 100%;
+    
+}
+
+.img {
+    width: 19%;
+    height: 26%;
+    align-content: space-between;
+    position: absolute;
+    position: relative;
+    top: 250px;
+    margin: 30px auto ;
+    opacity: 0.5;
+    transition: 2s;
+}
+.img:hover{
+    transform: scale(0.8)rotate(30deg);
+    box-shadow: 10px 10px 5px white;
+    opacity: 1;
+}
