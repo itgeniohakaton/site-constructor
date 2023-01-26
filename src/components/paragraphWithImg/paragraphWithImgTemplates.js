@@ -10,10 +10,11 @@ const defaultClasses =
 export function paragraphWithImgTemplate(
   classes = defaultClasses,
   imgLink = defaultImgLink,
-  text = defaultText
+  text = defaultText,
+  id
 ) {
   const paragraphWithImg = `
-    <div class="paragraphWithImg ${classes}">
+    <div class="paragraphWithImg ${classes}" id="paragraphWithImg${id}">
       <div>
         <p>
           <img

@@ -1,5 +1,5 @@
 import { paragraphWithImgTemplate } from "./paragraphWithImgTemplates.js";
-
+import { uuid } from "../../utils.js/uniqueId.js";
 export function addParagraphWithImg(event, site) {
   {
     const imgLink = event.target.imgLink.value || undefined;
@@ -17,7 +17,7 @@ export function addParagraphWithImg(event, site) {
 
     site.insertAdjacentHTML(
       "beforeend",
-      paragraphWithImgTemplate(classes, imgLink, paragraphText)
+      paragraphWithImgTemplate(classes, imgLink, paragraphText, uuid())
     );
   }
 }
