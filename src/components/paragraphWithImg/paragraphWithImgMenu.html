@@ -1,91 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="paragraphWithImgMenu.css">
-    <style>
-      form {
-        width: 10%;
-      }
-      .form-group div {
-        display: flex;
-        flex-direction: column;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="accordion_item active">
-      <div class="accordion_header">
-        <div class="accordion_title">paragraphWithImg</div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="paragraphWithImgMenu.css">
+  <style>
+    form {
+      width: 10%;
+    }
+
+    .form-group div {
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="accordion_item active">
+    <div class="accordion_header">
+      <div class="accordion_title">paragraphWithImg</div>
     </div>
     <div class="accordion_content">
-    <form name="paragraphWithImg">
-      <h5>Paragraph With Img</h5>
-      <div>
-        <label for="paragraphWithImgLink">Img link:</label>
-
-        <input
-          id="paragraphWithImgLink"
-          name="imgLink"
-          placeholder="Img link"
-        />
-      </div>
-
-      <div>
+      <form name="paragraphWithImg">
+        <h5>Paragraph With Img</h5>
         <div>
-          <label for="paragraphWithImgBacground">Choose background:</label>
+          <label for="paragraphWithImgLink">Img link:</label>
 
-          <select
-            name="paragraphWithImgBacground"
-            id="paragraphWithImgBacground"
-          >
-            <option value="">--Please choose an option--</option>
-            <option value="paragraphWithImgBackgroundGreen">Green</option>
-            <option value="paragraphWithImgBackgroundBlue">Blue</option>
-            <option value="paragraphWithImgBackgroundOrange">Orange</option>
-          </select>
+          <input id="paragraphWithImgLink" name="imgLink" placeholder="Img link" />
         </div>
+
         <div>
-          <label for="paragraphWithImgFont">Choose font family:</label>
+          <div>
+            <label for="paragraphWithImgBackground">Choose background:</label>
 
-          <select name="paragraphWithImgFont" id="paragraphWithImgFont">
-            <option value="">--Please choose an option--</option>
-            <option value="paragraphWithImgFontLato">Lato</option>
-            <option value="paragraphWithImgFontCursive">Cursive</option>
-            <option value="paragraphWithImgFontGill">Gill Sans</option>
-          </select>
-        </div>
-        <div>
-          <label for="paragraphWithImgAlignment">Choose img alignment:</label>
+            <select name="paragraphWithImgBackground" id="paragraphWithImgBackground">
+              <option value="">--Please choose an option--</option>
+              <option value="paragraphWithImgBackgroundGreen">Green</option>
+              <option value="paragraphWithImgBackgroundBlue">Blue</option>
+              <option value="paragraphWithImgBackgroundOrange">Orange</option>
+            </select>
+          </div>
+          <div>
+            <label for="paragraphWithImgFont">Choose font family:</label>
 
-          <select
-            name="paragraphWithImgAlignment"
-            id="paragraphWithImgAlignment"
-          >
-            <option value="">--Please choose an option--</option>
-            <option value="paragraphWithImgRight">Right</option>
-            <option value="paragraphWithImgLeft">Left</option>
-          </select>
-        </div>
-        <div>
-          <label for="paragraphWithImgSize">Choose img size:</label>
+            <select name="paragraphWithImgFont" id="paragraphWithImgFont">
+              <option value="">--Please choose an option--</option>
+              <option value="paragraphWithImgFontLato">Lato</option>
+              <option value="paragraphWithImgFontCursive">Cursive</option>
+              <option value="paragraphWithImgFontGill">Gill Sans</option>
+            </select>
+          </div>
+          <div>
+            <label for="paragraphWithImgAlignment">Choose img alignment:</label>
 
-          <select name="paragraphWithImgSize" id="paragraphWithImgSize">
-            <option value="">--Please choose an option--</option>
-            <option value="paragraphWithImgSmall">Small</option>
-            <option value="paragraphWithImgMedium">Medium</option>
-            <option value="paragraphWithImgLarge">Large</option>
-          </select>
+            <select name="paragraphWithImgAlignment" id="paragraphWithImgAlignment">
+              <option value="">--Please choose an option--</option>
+              <option value="paragraphWithImgRight">Right</option>
+              <option value="paragraphWithImgLeft">Left</option>
+            </select>
+          </div>
+          <div>
+            <label for="paragraphWithImgSize">Choose img size:</label>
+
+            <select name="paragraphWithImgSize" id="paragraphWithImgSize">
+              <option value="">--Please choose an option--</option>
+              <option value="paragraphWithImgSmall">Small</option>
+              <option value="paragraphWithImgMedium">Medium</option>
+              <option value="paragraphWithImgLarge">Large</option>
+            </select>
+          </div>
         </div>
-      </div>
-      <button type="submit">Add</button>
-      <hr />
-    </form>
+        <button type="submit">Add</button>
+        <hr />
+      </form>
     </div>
-    </div>
-    <script src="paragraphWithImgMenu.js"></script>
-  </body>
+  </div>
+  <script src="paragraphWithImgMenu.js"></script>
+</body>
+
 </html>

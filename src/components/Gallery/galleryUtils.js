@@ -10,7 +10,7 @@ export function addGallery(event, site) {
   images[3] = event.target.imgLink4.value || defaultImages[3];
   images[4] = event.target.imgLink5.value || defaultImages[4];
 
-  const background = event.target.bacground.value || "galleryBackgroundBlue";
+  const background = event.target.background.value || "galleryBackgroundBlue";
   const headerFont = event.target.headerFont.value || "galleryHeaderFontGill";
   const classes = background + " " + headerFont;
 

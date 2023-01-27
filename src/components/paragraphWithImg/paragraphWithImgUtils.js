@@ -5,7 +5,7 @@ export function addParagraphWithImg(event, site) {
   const paragraphText = event.target.text.value || defaultText;
 
   const backgroundStyle =
-    event.target.paragraphWithImgBacground.value ||
+    event.target.paragraphWithImgBackground.value ||
     "paragraphWithImgBackgroundBlue";
   const fontFamly =
     event.target.paragraphWithImgFont.value || "paragraphWithImgFontLato";

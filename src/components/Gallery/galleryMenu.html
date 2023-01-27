@@ -1,64 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      form {
-        width: 10%;
-      }
-      .form-group div {
-        display: flex;
-        flex-direction: column;
-      }
-    </style>
-  </head>
-  <body>
-    <form name="gallery">
-      <h5>Gallery</h5>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    form {
+      width: 10%;
+    }
+
+    .form-group div {
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+</head>
+
+<body>
+  <form name="gallery">
+    <h5>Gallery</h5>
+    <div>
+      <label for="galleryHeader">Header:</label>
+      <input id="gallery" name="galleryHeader" placeholder="Gallery header" />
+    </div>
+    <div>
+      <label for="">Img links:</label>
+      <input id="galleryImgLink1" name="imgLink1" placeholder="Img link 1" />
+
+      <input id="galleryImgLink2" name="imgLink2" placeholder="Img link 2" />
+
+      <input id="galleryImgLink3" name="imgLink3" placeholder="Img link 3" />
+
+      <input id="galleryImgLink4" name="imgLink4" placeholder="Img link 4" />
+
+      <input id="galleryImgLink5" name="imgLink5" placeholder="Img link 5" />
+    </div>
+
+    <div>
       <div>
-        <label for="galleryHeader">Header:</label>
-        <input id="gallery" name="galleryHeader" placeholder="Gallery header" />
+        <label for="galleryBackground">Choose background:</label>
+
+        <select name="galleryBackground" id="galleryBackground">
+          <option value="">--Please choose an option--</option>
+          <option value="galleryBackgroundGreen">Green</option>
+          <option value="galleryBackgroundBlue">Blue</option>
+          <option value="galleryBackgroundOrange">Orange</option>
+        </select>
       </div>
       <div>
-        <label for="">Img links:</label>
-        <input id="galleryImgLink1" name="imgLink1" placeholder="Img link 1" />
+        <label for="galleryHeaderFont">Choose font family:</label>
 
-        <input id="galleryImgLink2" name="imgLink2" placeholder="Img link 2" />
-
-        <input id="galleryImgLink3" name="imgLink3" placeholder="Img link 3" />
-
-        <input id="galleryImgLink4" name="imgLink4" placeholder="Img link 4" />
-
-        <input id="galleryImgLink5" name="imgLink5" placeholder="Img link 5" />
+        <select name="galleryHeaderFont" id="galleryHeaderFont">
+          <option value="">--Please choose an option--</option>
+          <option value="galleryHeaderFontLato">Lato</option>
+          <option value="galleryHeaderFontCursive">Cursive</option>
+          <option value="galleryHeaderFontGill">Gill Sans</option>
+        </select>
       </div>
+    </div>
+    <button type="submit">Add</button>
+    <hr />
+  </form>
+</body>
 
-      <div>
-        <div>
-          <label for="galleryBacground">Choose background:</label>
-
-          <select name="galleryBacground" id="galleryBacground">
-            <option value="">--Please choose an option--</option>
-            <option value="galleryBackgroundGreen">Green</option>
-            <option value="galleryBackgroundBlue">Blue</option>
-            <option value="galleryBackgroundOrange">Orange</option>
-          </select>
-        </div>
-        <div>
-          <label for="galleryHeaderFont">Choose font family:</label>
-
-          <select name="galleryHeaderFont" id="galleryHeaderFont">
-            <option value="">--Please choose an option--</option>
-            <option value="galleryHeaderFontLato">Lato</option>
-            <option value="galleryHeaderFontCursive">Cursive</option>
-            <option value="galleryHeaderFontGill">Gill Sans</option>
-          </select>
-        </div>
-      </div>
-      <button type="submit">Add</button>
-      <hr />
-    </form>
-  </body>
 </html>

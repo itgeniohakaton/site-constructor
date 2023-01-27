@@ -36,7 +36,7 @@ export function feedbackMenuTemplate() {
       <h5>Feedback form</h5>
       <div class="flex direction-col">
 
-        <label for="feedbackBacground">Choose background:</label>
+        <label for="feedbackBackground">Choose background:</label>
         <select
         name="background"
         id="feedbackBackground"

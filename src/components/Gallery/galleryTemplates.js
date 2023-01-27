@@ -34,9 +34,9 @@ export function galleryMenuTemplate() {
 
     <div>
       <div>
-        <label for="galleryBacground">Choose background:</label>
+        <label for="galleryBackground">Choose background:</label>
 
-        <select name="bacground" id="galleryBacground">
+        <select name="background" id="galleryBackground">
           <option value="">--Please choose an option--</option>
           <option value="galleryBackgroundGreen">Green</option>
           <option value="galleryBackgroundBlue">Blue</option>

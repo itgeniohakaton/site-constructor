@@ -27,11 +27,11 @@ export function paragraphWithImgMenuTemplate() {
     <textarea id="paragraphWithImgText" name="text" placeholder="Paragraph text"></textarea> 
     
     
-    <label for="paragraphWithImgBacground">Choose background:</label>
+    <label for="paragraphWithImgBackground">Choose background:</label>
     
     <select
-    name="paragraphWithImgBacground"
-    id="paragraphWithImgBacground"
+    name="paragraphWithImgBackground"
+    id="paragraphWithImgBackground"
     >
     <option value="">--Please choose an option--</option>
     <option value="paragraphWithImgBackgroundGreen">Green</option>
