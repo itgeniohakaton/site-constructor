@@ -5,7 +5,9 @@ import { galleryMenuTemplate } from "./components/gallery/galleryTemplates.js";
 import { addGallery } from "./components/gallery/galleryUtils.js";
 import { feedbackMenuTemplate } from "./components/feedback/feedbackTemplates.js";
 import { addFeedback } from "./components/feedback/feedbackUtils.js";
-
+import { addList } from "./components/list/listUtils.js";
+import { listMenuTemplate } from "./components/list/listTemplates.js";
+import { addListItem } from "./components/list/listUtils.js";
 const customizer = document.getElementById("customizer");
 
 //adding customizers
@@ -15,6 +17,8 @@ customizer.insertAdjacentHTML("beforeend", paragraphWithImgMenuTemplate());
 customizer.insertAdjacentHTML("beforeend", galleryMenuTemplate());
 //for feedback
 customizer.insertAdjacentHTML("beforeend", feedbackMenuTemplate());
+//for list
+customizer.insertAdjacentHTML("beforeend", listMenuTemplate());
 
 //adding action buttons
 const actionButtons = document.getElementById("action-buttons");
@@ -40,4 +44,20 @@ const feedbackCustomizer = document.getElementById("feedbackCustomizer");
 feedbackCustomizer.addEventListener("submit", (event) => {
   event.preventDefault();
   addFeedback(event, site);
+});
+
+const listCustomizer = document.getElementById("listCustomizer");
+const listItem = document.getElementById("listItem");
+listItem.addEventListener("keypress", (event) => {
+  event.stopPropagation();
+  if (event.key === "Enter") {
+    event.preventDefault();
+    addListItem(event.target.value);
+    event.target.value = "";
+  }
+});
+
+listCustomizer.addEventListener("submit", (event) => {
+  event.preventDefault();
+  addList(event, site);
 });
