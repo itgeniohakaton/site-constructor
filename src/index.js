@@ -61,3 +61,16 @@ listCustomizer.addEventListener("submit", (event) => {
   event.preventDefault();
   addList(event, site);
 });
+
+const scatchList = document.querySelector("#site");
+
+const deleteBtn = (document.getElementById(
+  "button--delete-last-component"
+).onclick = function deleteScatch() {
+  scatchList.removeChild(scatchList.lastElementChild);
+});
+
+const resetBtn = (document.getElementById("button--delete-all").onclick =
+  function resetAll() {
+    document.getElementById("site").innerHTML = "";
+  });
