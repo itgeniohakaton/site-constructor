@@ -1,162 +1,184 @@
- @import url("https:/*fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
- * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
- }
-    *,
-    *::after,
-    *::before {
-      box-sizing: inherit;
-    }
-    input,
-textarea {
+/* @import url("https:/*fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"); */
+.feedbackContainer * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-body {
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    line-height: 1.2;
-    width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(45deg, #fff1eb, #ace0f9);
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
+.feedbackContainer *,
+.feedbackContainer *::after,
+.feedbackContainer *::before {
+  box-sizing: inherit;
 }
-  
-.container {
-    width: 100%;
-    max-width: 1000px;
-    padding: 0 20px;
-  }
-  
-  
-  .content {
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-    background: #fff;
-    padding: 40px;
-    border-radius: 5px;
-    box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
-  }
-  
-  
-  .left-side {
-    width: 25%; 
-    height: 100%; 
-    position: relative; 
-    display: flex;
-    flex-direction: column; 
-  }
-  
-  
-  .left-side::before {
-    content: ""; 
-    position: absolute; 
-    height: 70%;
-    width: 2px;
-    background: #afafb6;
-    right: -15px; 
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
-  
-  .right-side {
-    width: 75%;
-    margin-left: 75px;
-  }
-  
-  
-  .details {
-    margin-bottom: 15px;
-    text-align: center;
-  }
-  
-  
-  .details i {
-    font-size: 25px; 
-    color: #3e2093; 
-    margin-bottom: 10px;
-  }
-  
-  
-  .topic {
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 7px; 
-  }
-  
-  
-  .text-one,
-  .text-two {
-    font-size: 14px;
-    color: #afafb6;
-  }
-  
- 
-  .topic-text {
-    font-size: 23px;
-    font-weight: 600;
-    color: #3e2093;
-    margin-bottom: 10px;
-  }
-  
-  
-  .right-side p {
-    margin-bottom: 20px;
-  }
-  
- 
-  .input-box {
-    height: 50px; 
-    width: 100%;
-    margin-bottom: 20px; 
-  }
-  
- 
-  .input-box input,
-  .input-box textarea {
-    height: 100%; 
-    width: 100%; 
-    border: none; 
-    border-radius: 5px;
-    background: #f0f1f8; 
-    padding: 0 20px;
-  }
-  
-  
-  .input-box textarea {
-    resize: none; 
-    padding: 20px;
-    font-family: "Roboto", sans-serif;
-  }
-  
-  
-  .message-box {
-    min-height: 110px; 
-  }
-  
-  
-  .button {
-    display: inline-block; 
-  }
-  
+.feedbackContainer input,
+.feedbackContainer textarea {
+  box-sizing: border-box;
+}
+.feedbackContainer {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  width: 100%;
+  /* min-height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 30px 0;
+}
 
-  .button input[type="button"] {
-    color: #fff;
-    font-size: 18px;
-    background: #3e2093;
-    outline: none;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 7px;
-    transition: 0.2s;
-  }
-  
- 
-  .button input[type="button"]:hover {
-    background: rgb(0, 0, 207);
-  }
+.feedbackContainer .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+}
+
+.feedbackContainer .feedbackContainer .left-side {
+  width: 25%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedbackContainer .left-side::before {
+  content: "";
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  background: #afafb6;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.feedbackContainer .right-side {
+  width: 75%;
+  margin-left: 75px;
+}
+
+.feedbackContainer .details {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.feedbackContainer .details i {
+  font-size: 25px;
+  color: #3e2093;
+  margin-bottom: 10px;
+}
+
+.feedbackContainer .topic {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 7px;
+}
+
+.feedbackContainer .text-one,
+.feedbackContainer .text-two {
+  font-size: 14px;
+  color: #afafb6;
+}
+
+.feedbackContainer .topic-text {
+  font-size: 23px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 10px;
+}
+.feedbackContainer p {
+  color: white;
+}
+
+.feedbackContainer .right-side p {
+  margin-bottom: 20px;
+}
+
+.feedbackContainer .input-box {
+  height: 50px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.feedbackContainer .input-box input,
+.feedbackContainer .input-box textarea {
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background: #f0f1f8;
+  padding: 0 20px;
+}
+
+.feedbackContainer .input-box textarea {
+  resize: none;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.feedbackContainer .message-box {
+  min-height: 110px;
+}
+
+.feedbackContainer .button {
+  display: inline-block;
+}
+
+.feedbackContainer .button input[type="button"] {
+  font-size: 18px;
+  background: white;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 7px;
+  transition: 0.2s;
+}
+
+.feedbackContainer .button input[type="button"]:hover {
+  background: rgb(0, 0, 207);
+}
+
+/* background variants */
+.feedbackBackgroundGreen {
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(126, 213, 111),
+    rgb(40, 180, 133)
+  );
+}
+.feedbackBackgroundGreen .button input[type="button"],
+.feedbackBackgroundGreen input::placeholder,
+.feedbackBackgroundGreen textarea::placeholder {
+  color: rgb(40, 180, 133);
+}
+
+.feedbackBackgroundBlue {
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
+}
+.feedbackBackgroundBlue .button input[type="button"],
+.feedbackBackgroundBlue input::placeholder,
+.feedbackBackgroundBlue textarea::placeholder {
+  color: #5643fa;
+}
+.feedbackBackgroundOrange {
+  background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+}
+.feedbackBackgroundOrange .button input[type="button"],
+.feedbackBackgroundOrange input::placeholder,
+.feedbackBackgroundOrange textarea::placeholder {
+  color: #ff7730;
+}
+
+/* font variants */
+.feedbackFontLato {
+  font-family: Lato, sans-serif;
+}
+.feedbackFontCursive {
+  font-family: cursive;
+}
+.feedbackFontGill {
+  font-family: "Gill Sans", sans-serif;
+}
