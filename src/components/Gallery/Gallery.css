@@ -1,0 +1,54 @@
+.gallery h1 {
+  color: white;
+  z-index: 100;
+  height: 20%;
+
+  text-align: center;
+}
+.gallery {
+  height: 30vh;
+  /* width: 100%; */
+
+  padding: 30px;
+  margin: 30px 0;
+}
+
+.gallery .img {
+  width: 19%;
+  height: 70%;
+
+  position: relative;
+  top: 0px;
+  opacity: 0.5;
+  transition: 2s;
+}
+.gallery .img:hover {
+  transform: scale(0.8) rotate(30deg);
+  box-shadow: 10px 10px 5px white;
+  opacity: 1;
+}
+
+/* background variants */
+.galleryBackgroundGreen {
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(126, 213, 111),
+    rgb(40, 180, 133)
+  );
+}
+.galleryBackgroundBlue {
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
+}
+.galleryBackgroundOrange {
+  background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+}
+/* font variants */
+.galleryHeaderFontLato {
+  font-family: Lato, sans-serif;
+}
+.galleryHeaderFontCursive {
+  font-family: cursive;
+}
+.galleryHeaderFontGill {
+  font-family: "Gill Sans", sans-serif;
+}
