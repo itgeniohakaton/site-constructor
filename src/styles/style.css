@@ -87,6 +87,8 @@ button:hover {
 /* Accordion */
 .accordion_item {
   border: 1px solid #000000;
+  border-radius: 3px;
+
   margin-bottom: 10px;
 }
 
@@ -106,12 +108,14 @@ button:hover {
 .accordion_header {
   padding: 10px 50px 10px 20px;
   border-bottom: 1px solid transparent;
-  border-radius: 3px;
   position: relative;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
+  transition: all 1s;
 }
 .accordion_header:hover {
+  background-color: #dfdddd;
+  transition: all 1s;
 }
 
 .accordion_header:after {
