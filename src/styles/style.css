@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 body {
   padding: 0;
   margin: 0;
@@ -12,6 +13,7 @@ body {
 }
 .menu-button {
   display: block;
+  font-family: "Roboto", sans-serif;
   margin: 10px 20px;
   color: rgb(59, 59, 59);
   border: 1px solid black;
@@ -61,17 +63,21 @@ body {
 button {
   background-color: white;
   color: black;
-  border: 2px solid black;
+  border: 1px solid black;
   padding: 2px 5px;
   text-align: center;
+  font-family: "Roboto", sans-serif;
+
   text-decoration: none;
   display: inline-block;
+  border-radius: 3px;
   font-size: 15px;
   transition: 0.3s ease;
+  margin: 3px;
 }
 
 button:hover {
-  background-color: #3e8e41;
+  background-color: #dfdddd;
   cursor: pointer;
 }
 
@@ -80,7 +86,7 @@ button:hover {
 }
 /* Accordion */
 .accordion_item {
-  border: 1px solid #e5e5e5;
+  border: 1px solid #000000;
   margin-bottom: 10px;
 }
 
@@ -89,7 +95,8 @@ button:hover {
 }
 
 .accordion_item.active .accordion_header {
-  border-bottom-color: #e5e5e5;
+  border-bottom-color: #000000;
+  border-bottom-style: dashed;
 }
 
 .accordion_item.active .accordion_header:after {
@@ -97,22 +104,24 @@ button:hover {
 }
 
 .accordion_header {
-  padding: 15px 20px 15px 65px;
+  padding: 10px 50px 10px 20px;
   border-bottom: 1px solid transparent;
-
+  border-radius: 3px;
   position: relative;
   cursor: pointer;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+.accordion_header:hover {
 }
 
 .accordion_header:after {
   content: "";
   display: block;
-  width: 16px;
-  height: 16px;
+  width: 10px;
+  height: 10px;
 
-  border-top: 2px solid #ccc;
-  border-right: 2px solid #ccc;
+  border-top: 1px solid rgb(0, 0, 0);
+  border-right: 1px solid rgb(0, 0, 0);
 
   position: absolute;
   top: 50%;
@@ -124,10 +133,9 @@ button:hover {
 
 .accordion_content {
   padding: 15px 20px;
-  color: #999;
+  color: black;
   font-size: 15px;
   font-family: "Roboto", sans-serif;
-  font-style: italic;
   font-weight: 300;
 
   display: none;
