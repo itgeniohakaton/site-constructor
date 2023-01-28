@@ -57,6 +57,24 @@ body {
 .justify-between {
   justify-content: space-between;
 }
+
+button {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 2px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #3e8e41;
+  cursor: pointer;
+}
+
 .align-center {
   align-items: center;
 }
