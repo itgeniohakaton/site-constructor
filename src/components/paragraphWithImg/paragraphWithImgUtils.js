@@ -2,6 +2,7 @@ import { paragraphWithImgTemplate } from "./paragraphWithImgTemplates.js";
 
 export function addParagraphWithImg(event, site) {
   const imgLink = event.target.imgLink.value || defaultImgLink;
+  const header = event.target.header.value || "Paragraph header";
   const paragraphText = event.target.text.value || defaultText;
 
   const backgroundStyle =
@@ -18,7 +19,7 @@ export function addParagraphWithImg(event, site) {
     backgroundStyle + " " + fontFamly + " " + imgAligment + " " + imgSize;
   site.insertAdjacentHTML(
     "beforeend",
-    paragraphWithImgTemplate(classes, imgLink, paragraphText)
+    paragraphWithImgTemplate(classes, imgLink, header, paragraphText)
   );
 }
 const defaultText = `
