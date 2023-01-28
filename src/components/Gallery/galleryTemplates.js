@@ -1,4 +1,5 @@
 import { uuid } from "../../utils/uniqueId.js";
+import { addAccordionWrapper } from "../accordion/accordionTemplate.js";
 export function galleryTemplate(classes, images, header) {
   const gallery = `
     <div class="gallery ${classes}" id='gallery${uuid()}'>
@@ -13,9 +14,10 @@ export function galleryTemplate(classes, images, header) {
 }
 
 export function galleryMenuTemplate() {
-  return `
+  return addAccordionWrapper(
+    "Gallery",
+    `
   <form name="gallery" id="galleryCustomizer">
-    <h5>Gallery</h5>
     <div class="flex direction-col">
 
    
@@ -54,7 +56,7 @@ export function galleryMenuTemplate() {
       
         <button type="submit" class="self-center">Add</button>
     </div>
-    <hr />
   </form>
-  `;
+  `
+  );
 }

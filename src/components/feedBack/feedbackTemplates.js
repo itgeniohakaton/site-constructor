@@ -1,4 +1,6 @@
 import { uuid } from "../../utils/uniqueId.js";
+import { addAccordionWrapper } from "../accordion/accordionTemplate.js";
+
 export function feedbackTemplate(classes) {
   const feedback = `
     <div class="feedbackContainer ${classes}" id='feedback${uuid()}'>
@@ -31,10 +33,10 @@ export function feedbackTemplate(classes) {
 }
 
 export function feedbackMenuTemplate() {
-  return `
-  
+  return addAccordionWrapper(
+    "Feedback form",
+    `
     <form name="feedback" id="feedbackCustomizer">
-      <h5>Feedback form</h5>
       <div class="flex direction-col">
 
         <label for="feedbackBackground">Choose background:</label>
@@ -57,9 +59,7 @@ export function feedbackMenuTemplate() {
         </select>
         <button type="submit" class="self-center">Add</button>
       </div>
-      <hr />
-    
     </form>
-    
-  `;
+  `
+  );
 }

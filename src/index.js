@@ -8,6 +8,7 @@ import { addFeedback } from "./components/feedback/feedbackUtils.js";
 import { addList } from "./components/list/listUtils.js";
 import { listMenuTemplate } from "./components/list/listTemplates.js";
 import { addListItem } from "./components/list/listUtils.js";
+import { addAccordion } from "./components/accordion/accordion.js";
 const customizer = document.getElementById("customizer");
 
 //adding customizers
@@ -74,3 +75,5 @@ const resetBtn = (document.getElementById("button--delete-all").onclick =
   function resetAll() {
     document.getElementById("site").innerHTML = "";
   });
+
+addAccordion();

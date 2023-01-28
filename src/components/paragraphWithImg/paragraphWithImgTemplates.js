@@ -1,4 +1,5 @@
 import { uuid } from "../../utils/uniqueId.js";
+import { addAccordionWrapper } from "../accordion/accordionTemplate.js";
 
 export function paragraphWithImgTemplate(classes, imgLink, header, text) {
   const paragraphWithImg = `
@@ -18,9 +19,10 @@ export function paragraphWithImgTemplate(classes, imgLink, header, text) {
 }
 
 export function paragraphWithImgMenuTemplate() {
-  return `
+  return addAccordionWrapper(
+    "Paragraph With Img",
+    `
     <form name="paragraphWithImg" id="paragraphWithImgCustomizer">
-      <h5>Paragraph With Img</h5>
       <div class="flex direction-col">
         <label for="paragraphWithImgLink">Img link:</label>
         <input id="paragraphWithImgLink" name="imgLink" placeholder="Img link" />
@@ -70,8 +72,8 @@ export function paragraphWithImgMenuTemplate() {
         
         <button type="submit" class="self-center">Add</button>
       </div>
-      <hr />
     
     </form>
-    `;
+    `
+  );
 }
