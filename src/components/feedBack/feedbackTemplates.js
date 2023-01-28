@@ -1,8 +1,9 @@
+import { uuid } from "../../utils/uniqueId.js";
 export function feedbackTemplate(classes) {
   const feedback = `
-    <div class="feedbackContainer ${classes}" >
+    <div class="feedbackContainer ${classes}" id='feedback${uuid()}'>
       <div class="right-side">
-        <div class="topic-text">Отправьте нам сообщение</div>
+        <h2 class="topic-text">Отправьте нам сообщение</h2>
         <p>
           Если у вас имеются вопросы-обратитесь в нашу службу обратной связи.
         </p>

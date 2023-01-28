@@ -1,6 +1,9 @@
-export function paragraphWithImgTemplate(classes, imgLink, text) {
+import { uuid } from "../../utils/uniqueId.js";
+
+export function paragraphWithImgTemplate(classes, imgLink, header, text) {
   const paragraphWithImg = `
-    <div class="paragraphWithImg ${classes}">
+    <div class="paragraphWithImg ${classes}" id='paragraphWithImg${uuid()}'>
+    <h2>${header}</h2>
       <div>
         <p>
           <img
@@ -21,6 +24,9 @@ export function paragraphWithImgMenuTemplate() {
       <div class="flex direction-col">
         <label for="paragraphWithImgLink">Img link:</label>
         <input id="paragraphWithImgLink" name="imgLink" placeholder="Img link" />
+
+        <label for="paragraphWithImgHeader">Header:</label>
+        <input id="paragraphWithImgHeader" name="header" placeholder="Header" />
 
         <label for="paragraphWithImgText">Paragraph text:</label>
         <textarea id="paragraphWithImgText" name="text" placeholder="Paragraph text"></textarea> 

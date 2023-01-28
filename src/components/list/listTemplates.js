@@ -1,10 +1,11 @@
+import { uuid } from "../../utils/uniqueId.js";
 export function listTemplate(classes, header, items, type) {
   let listItems = "";
   items.forEach((item) => {
     listItems += `<li>${item}</li>`;
   });
   const list = `
-    <div id="list" class='whitetext ${classes}'>
+    <div id="list${uuid()}" class='whitetext list ${classes}'>
       <div id='listWrapper'>
         <h2>${header}</h2>
         <${type}>

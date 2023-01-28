@@ -1,7 +1,8 @@
+import { uuid } from "../../utils/uniqueId.js";
 export function galleryTemplate(classes, images, header) {
   const gallery = `
-    <div class="gallery ${classes}">
-        <h1>${header}</h1>
+    <div class="gallery ${classes}" id='gallery${uuid()}'>
+        <h2>${header}</h2>
         <img class="img" src="${images[0]}" >
         <img class="img" src="${images[1]}" >
         <img class="img" src="${images[2]}" >
