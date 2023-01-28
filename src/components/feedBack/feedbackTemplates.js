@@ -56,6 +56,7 @@ export function feedbackMenuTemplate() {
         </select>
         <button type="submit" class="self-center">Add</button>
       </div>
+      <hr />
     
     </form>
     

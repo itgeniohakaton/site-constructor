@@ -53,6 +53,7 @@ export function listMenuTemplate() {
         
         <button type="submit" class="self-center">Add</button>
     </div>
+    <hr />
 
 </form>
   `;

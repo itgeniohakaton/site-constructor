@@ -1,81 +1,74 @@
-.name
-{
-    display: flex;
-    background-color: rgb(41, 33, 44);
-    border: rgb(62, 40, 9) solid 2px ;
-    color: rgb(147, 147, 147);
-    margin: 5px;
-   
-
+.name {
+  display: flex;
+  background-color: rgb(41, 33, 44);
+  border: rgb(62, 40, 9) solid 2px;
+  color: rgb(147, 147, 147);
+  margin: 5px;
 }
-.page
-{
-   
-    bottom: 0;
-    padding: 0;
-    margin: 0 auto;
-    
+.page {
+  bottom: 0;
+  padding: 0;
+  margin: 0 auto;
 }
-.head
-{
-    background-size:cover ;
-    display: flex;
-    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-    color: rgb(0, 0, 0);
-    background-color:rgba(255, 255, 255, 0.501) ;
-    padding: 5% 15px;
-    width: 100%;
-
+.head {
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.501);
+  padding: 5% 15px;
+  width: 100%;
 }
-.info
-{
-    display: block;
-    border: 15px;
+.info {
+  display: block;
+  border: 15px;
 }
-.body
-{
-    display: flex;
-    background-color: #fffefe81;
-    color: rgb(0, 0, 0);
-    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-    padding: 5% 15px;
-    width: 100%;
+.body {
+  /* display: flex; */
+  background-color: #fffefe81;
+  color: rgb(0, 0, 0);
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+  padding: 5% 15px;
+  width: 100%;
 }
-.exemple
-{
-    display: flex;
-    border: 15px;
+.exemple {
+  display: flex;
+  border: 15px;
 }
 
-.end
-{
-    display: flex;
-    background-color: rgba(255, 255, 255, 0.500);
-    color: #000;
-    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-    padding: 5% 15px;
-    margin: 0px;
-    width: 100%;
+.end {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #000;
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+  padding: 5% 15px;
+  margin: 0px;
+  width: 100%;
 }
-.qaa
-{
-    display: flex;
-   
+.qaa {
+  display: flex;
 }
-body
-{
-    height: 140vh;
-    background-repeat:no-repeat;
-    background-size: 1700px 1200px ;
-   background-attachment: fixed;
-   background-image:url(bodyfon.jpg) ;
-
-
+body {
+  /* height: 140vh; */
+  background-repeat: no-repeat;
+  /* background-size: 1700px 1200px; */
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url(bodyfon.jpg);
 }
-a
-{
-    padding: 15px;
-    margin: 3px;
-    border: rgb(62, 40, 9) solid 2px ;
-   
+a {
+  padding: 15px;
+  margin: 3px;
+  border: rgb(255, 255, 255) solid 2px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.099);
+  text-decoration: none;
+  transition: all 1s;
+}
+a:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.497);
+  color: black;
+  transition: all 1s;
 }

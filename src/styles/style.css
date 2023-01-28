@@ -5,11 +5,29 @@ body {
 #nav {
   height: 7vh;
   border: 1px solid lightgrey;
-  font-size: 40px;
+  font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
 }
+.menu-button {
+  display: block;
+  margin: 10px 20px;
+  color: rgb(59, 59, 59);
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 5px;
+  text-decoration: none;
+  transition: all 1s;
+}
+.menu-button:visited,
+.menu-button:hover {
+  color: black;
+  background-color: #dfdddd;
+  cursor: pointer;
+  transition: all 1s;
+}
+
 #app {
   display: flex;
 }
@@ -38,4 +56,7 @@ body {
 }
 .justify-between {
   justify-content: space-between;
+}
+.align-center {
+  align-items: center;
 }
