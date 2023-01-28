@@ -68,7 +68,7 @@
 .Helvetica {
   font-family: Helvetica;
 }
-#list {
+.list {
   display: flex;
   flex-direction: column;
   justify-content: center;
