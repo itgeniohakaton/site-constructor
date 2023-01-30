@@ -152,3 +152,12 @@ button:hover {
   text-transform: uppercase;
   font-weight: 550;
 }
+::placeholder {
+  font-family: "Roboto", sans-serif;
+}
+
+form input,
+form label,
+form select {
+  margin-top: 5px;
+}
