@@ -10,7 +10,7 @@ export function addHamburgerMenu(event, site) {
     menuItems += `<div class="links"><a href='#${component.id}'>${menuItemHeader}</a></div>`;
   });
   let background =
-    event.target.background.value || "hamburgerMenuBackgroundGreen";
+    event.target.background.value || "hamburgerMenuBackgroundBlue";
   let font = event.target.font.value || "hamburgerMenuFontLato";
   let classes = background + " " + font;
   site.insertAdjacentHTML(

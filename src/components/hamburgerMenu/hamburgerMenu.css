@@ -2,10 +2,12 @@
   opacity: 0;
 }
 #hamburgerMenu {
-  z-index: 1000;
+  z-index: 1;
   position: fixed;
+  height: 0;
   top: 50px;
-  height: 100%;
+  height: 0;
+  width: 30%;
 }
 #hamburgerMenu .button {
   /* position: fixed;
@@ -93,27 +95,31 @@
   left: 21px; */
   position: absolute;
   top: 10px;
-  z-index: 5;
+  z-index: 1000;
 }
 #hamburgerMenu .hamburgerMenuWrapper {
-  width: 0;
-  height: 0;
+  /* width: 0;
+  height: 0; */
+
+  display: none;
+  width: 100%;
+  height: 0vh;
   font-size: 25px;
   opacity: 0;
   position: absolute;
   padding: 60px;
   background-color: #dfdd1a;
-  top: 10px;
+  top: 0px;
   transform: translateX(100px);
-  transition: 0.5s;
+  transition: all 1s;
 }
 #hamburgerMenu #checkbox:checked ~ .hamburgerMenuWrapper {
-  width: 220px;
-  height: 100%;
+  /* width: 220px; */
+  height: 100vh;
   display: block;
   transform: translateX(0px);
-  transition: 0.5s;
   opacity: 1;
+  transition: all 1s;
 }
 /*#checkbox:not(:checked ~ .hamburgerMenuWrapper {
 	transition: 0.5s;
@@ -121,15 +127,17 @@
 #hamburgerMenu .links {
   /* height: 40px;
   width: 220px; */
-  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
-  padding: 5% 15px;
+  clip-path: polygon(7% 0, 100% 0, 93% 100%, 0 100%);
+  padding: 3% 1px;
   text-align: center;
   /* font-family: Trebuchet MS; */
   /* background-color: #dfdd1a; */
   opacity: 1;
+  transition: all 0.7s;
 }
 #hamburgerMenu .links:hover {
-  background-color: #ffffff;
+  background-color: #ffffffdc;
+  transition: all 0.7s;
 }
 #hamburgerMenu h1 {
   position: absolute;
@@ -166,12 +174,15 @@
 
 #hamburgerMenu.hamburgerMenuBackgroundGreen .links:hover a {
   color: rgb(40, 180, 133);
+  transition: all 0.7s;
 }
 #hamburgerMenu.hamburgerMenuBackgroundOrange .links:hover a {
   color: #ff7730;
+  transition: all 0.7s;
 }
 #hamburgerMenu.hamburgerMenuBackgroundBlue .links:hover a {
   color: #5643fa;
+  transition: all 0.7s;
 }
 
 /* font variants */
@@ -183,4 +194,9 @@
 }
 #hamburgerMenu.hamburgerMenuFontGill .links {
   font-family: "Gill Sans", sans-serif;
+}
+
+/* pos fixed fix*/
+div:not(#site) > #hamburgerMenu {
+  top: 0;
 }
