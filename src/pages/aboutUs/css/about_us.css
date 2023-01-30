@@ -1,0 +1,104 @@
+body {
+  background-color: #404040;
+}
+#testimonials {
+  background-image: url(/src/pageAboutUs/img/background.jpg);
+  background-size: cover;
+  border: 2px solid black;
+  margin: 0 auto;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.author {
+  color: #404040;
+  background-color: #fff;
+  border-radius: 4px;
+  margin: 30px;
+  padding: 25px;
+  font-size: 20px;
+  height: 220px;
+  width: 40%;
+  border-bottom: 4px solid #0e0e0e;
+  float: left;
+}
+
+.author-wrapper {
+  margin-top: 20px;
+}
+
+.author-pic {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 3px solid black;
+  margin-right: 6px;
+  float: left;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+.author-name {
+  font-weight: bold;
+  margin: 10px;
+  padding-top: 25px;
+  text-align: center;
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+/* menu */
+#nav {
+  height: 7vh;
+  border: 1px solid lightgrey;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+.menu-button:visited,
+.menu-button {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  margin: 10px 20px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 5px;
+  text-decoration: none;
+  transition: all 1s;
+}
+.menu-button:hover {
+  color: black;
+  background-color: #dfdddd;
+  cursor: pointer;
+  transition: all 1s;
+}
+/* flex */
+.flex {
+  display: flex;
+}
+.direction-col {
+  flex-direction: column;
+}
+.self-center {
+  align-self: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
