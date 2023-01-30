@@ -9,6 +9,8 @@ import { addList } from "./components/list/listUtils.js";
 import { listMenuTemplate } from "./components/list/listTemplates.js";
 import { addListItem } from "./components/list/listUtils.js";
 import { addAccordion } from "./components/accordion/accordion.js";
+import { hamdurgerMenuCustomizerTemplate } from "./components/hamburgerMenu/hamburgerMenuTemplates.js";
+import { addHamburgerMenu } from "./components/hamburgerMenu/hamburgerMenuUtils.js";
 const customizer = document.getElementById("customizer");
 
 //adding customizers
@@ -20,6 +22,8 @@ customizer.insertAdjacentHTML("beforeend", galleryMenuTemplate());
 customizer.insertAdjacentHTML("beforeend", feedbackMenuTemplate());
 //for list
 customizer.insertAdjacentHTML("beforeend", listMenuTemplate());
+//for hamburger menu
+customizer.insertAdjacentHTML("beforeend", hamdurgerMenuCustomizerTemplate());
 
 //adding action buttons
 const actionButtons = document.getElementById("action-buttons");
@@ -61,6 +65,24 @@ listItem.addEventListener("keypress", (event) => {
 listCustomizer.addEventListener("submit", (event) => {
   event.preventDefault();
   addList(event, site);
+});
+
+const hamburgerMenuCustomizer = document.getElementById(
+  "hamburgerMenuCustomizer"
+);
+hamburgerMenuCustomizer.addEventListener("submit", (event) => {
+  event.preventDefault();
+  if (document.getElementById("hamburgerMenu")) {
+    hamburgerMenuCustomizer.insertAdjacentHTML(
+      "beforeend",
+      `<p style='color:red' id='hamburgerMenuAlert'>Delete previous hamburger menu first!</p>`
+    );
+    setTimeout(() => {
+      document.getElementById("hamburgerMenuAlert").remove();
+    }, 5000);
+    return;
+  }
+  addHamburgerMenu(event, site);
 });
 
 const scatchList = document.querySelector("#site");
