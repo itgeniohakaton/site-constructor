@@ -47,8 +47,8 @@ export function paragraphWithImgMenuTemplate() {
         <label for="paragraphWithImgFont">Выберите шрифт:</label>
         <select name="paragraphWithImgFont" id="paragraphWithImgFont">
           <option value="">--Please choose an option--</option>
-          <option value="paragraphWithImgFontLato">Lato</option>
-          <option value="paragraphWithImgFontCursive">Cursive</option>
+          <option value="paragraphWithImgFontNunito">Nunito</option>
+          <option value="paragraphWithImgFontRoboto">Roboto</option>
           <option value="paragraphWithImgFontGill">Gill Sans</option>
         </select>
         

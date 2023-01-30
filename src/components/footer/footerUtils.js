@@ -5,7 +5,7 @@ export function addFooter(event, site) {
   const name = event.target.name.value || "John Doe";
   const phone = event.target.phone.value || "+ 123 456 78 90";
   const background = event.target.background.value || "footerBackgroundBlue";
-  const font = event.target.font.value || "footerFontLato";
+  const font = event.target.font.value || "footerFontNunito";
   const classes = background + " " + font;
   site.insertAdjacentHTML(
     "beforeend",

@@ -11,7 +11,7 @@ export function addHamburgerMenu(event, site) {
   });
   let background =
     event.target.background.value || "hamburgerMenuBackgroundBlue";
-  let font = event.target.font.value || "hamburgerMenuFontLato";
+  let font = event.target.font.value || "hamburgerMenuFontNunito";
   let classes = background + " " + font;
   site.insertAdjacentHTML(
     "beforeend",

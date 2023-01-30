@@ -49,8 +49,8 @@ export function listMenuTemplate() {
         <label for="listFont">Выберите шрифт:</label>
         <select name="listFont" id="listFont">
             <option value="">--Please choose an option--</option>
-            <option value="listFontLato">Lato</option>
-            <option value="listFontCursive">Cursive</option>
+            <option value="listFontNunito">Nunito</option>
+            <option value="listFontRoboto">Roboto</option>
             <option value="listFontGill">Gill Sans</option>
         </select>
         

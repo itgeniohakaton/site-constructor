@@ -6,13 +6,13 @@ export function addListItem(item) {
 }
 
 export function addList(event, site) {
-  const header = event.target.header.value || "List header";
+  const header = event.target.header.value || "Заголовок списка";
   const background = event.target.listBackground.value || "listBackgroundBlue";
-  const font = event.target.listFont.value || "listFontLato";
+  const font = event.target.listFont.value || "listFontNunito";
   const type = event.target.listType.value || "ul";
   const classes = background + " " + font;
   if (!listItems.length) {
-    listItems = ["First item", "Second item", "Third item"];
+    listItems = ["Первый элемент", "Второй элемент", "Третий элемент"];
   }
   site.insertAdjacentHTML(
     "beforeend",

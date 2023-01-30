@@ -53,8 +53,8 @@ export function feedbackMenuTemplate() {
         <label for="feedbackFont">Выберите шрифт:</label>
         <select name="font" id="feedbackFont">
           <option value="">--Please choose an option--</option>
-          <option value="feedbackFontLato">Lato</option>
-          <option value="feedbackFontCursive">Cursive</option>
+          <option value="feedbackFontNunito">Nunito</option>
+          <option value="feedbackFontRoboto">Roboto</option>
           <option value="feedbackFontGill">Gill Sans</option>
         </select>
         <button type="submit" class="self-center">Добавить</button>

@@ -38,8 +38,8 @@ export function footerMenuTemplate() {
         <label for="footerFont">Выберите шрифт:</label>
         <select name="font" id="footerFont">
           <option value="">--Please choose an option--</option>
-          <option value="footerFontLato">Lato</option>
-          <option value="footerFontCursive">Cursive</option>
+          <option value="footerFontNunito">Nunito</option>
+          <option value="footerFontRoboto">Roboto</option>
           <option value="footerFontGill">Gill Sans</option>
         </select>
         <button type="submit" class="self-center">Добавить</button>

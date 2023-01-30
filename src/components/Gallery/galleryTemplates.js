@@ -49,8 +49,8 @@ export function galleryMenuTemplate() {
 
         <select name="headerFont" id="galleryHeaderFont">
           <option value="">--Please choose an option--</option>
-          <option value="galleryHeaderFontLato">Lato</option>
-          <option value="galleryHeaderFontCursive">Cursive</option>
+          <option value="galleryHeaderFontNunito">Nunito</option>
+          <option value="galleryHeaderFontRoboto">Roboto</option>
           <option value="galleryHeaderFontGill">Gill Sans</option>
         </select>
       

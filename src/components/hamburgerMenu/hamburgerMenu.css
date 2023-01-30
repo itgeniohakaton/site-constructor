@@ -186,11 +186,11 @@
 }
 
 /* font variants */
-#hamburgerMenu.hamburgerMenuFontLato .links {
-  font-family: Lato, sans-serif;
+#hamburgerMenu.hamburgerMenuFontNunito .links {
+  font-family: "Nunito Sans", sans-serif;
 }
-#hamburgerMenu.hamburgerMenuFontCursive .links {
-  font-family: cursive;
+#hamburgerMenu.hamburgerMenuFontRoboto .links {
+  font-family: "Roboto", sans-serif;
 }
 #hamburgerMenu.hamburgerMenuFontGill .links {
   font-family: "Gill Sans", sans-serif;

@@ -72,11 +72,11 @@
 }
 
 /* font variants */
-.footerFontLato {
-  font-family: Lato, sans-serif;
+.footerFontNunito {
+  font-family: "Nunito Sans", sans-serif;
 }
-.footerFontCursive {
-  font-family: cursive;
+.footerFontRoboto {
+  font-family: "Roboto", sans-serif;
 }
 .footerFontGill {
   font-family: "Gill Sans", sans-serif;

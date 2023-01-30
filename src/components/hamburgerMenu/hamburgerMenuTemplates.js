@@ -38,8 +38,8 @@ export function hamdurgerMenuCustomizerTemplate() {
         <label for="hamburgerMenuFont">Выберите шрифт:</label>
         <select name="font" id="hamburgerMenuFont">
           <option value="">--Please choose an option--</option>
-          <option value="hamburgerMenuFontLato">Lato</option>
-          <option value="hamburgerMenuFontCursive">Cursive</option>
+          <option value="hamburgerMenuFontNunito">Nunito</option>
+          <option value="hamburgerMenuFontRoboto">Roboto</option>
           <option value="hamburgerMenuFontGill">Gill Sans</option>
         </select>
         <button type="submit" class="self-center">Добавить</button>

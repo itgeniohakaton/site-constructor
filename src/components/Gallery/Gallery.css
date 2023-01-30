@@ -43,11 +43,11 @@
   background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
 }
 /* font variants */
-.galleryHeaderFontLato {
-  font-family: Lato, sans-serif;
+.galleryHeaderFontNunito {
+  font-family: "Nunito Sans", sans-serif;
 }
-.galleryHeaderFontCursive {
-  font-family: cursive;
+.galleryHeaderFontRoboto {
+  font-family: "Roboto", sans-serif;
 }
 .galleryHeaderFontGill {
   font-family: "Gill Sans", sans-serif;

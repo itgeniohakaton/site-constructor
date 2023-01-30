@@ -131,14 +131,17 @@
   font-size: 18px;
   background: white;
   outline: none;
-  border: none;
+  border: 1px solid transparent;
   padding: 10px 20px;
   border-radius: 7px;
   transition: 0.2s;
 }
 
 .feedbackContainer .button input[type="button"]:hover {
-  background: rgb(0, 0, 207);
+  background: #5643fa;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
 }
 
 /* background variants */
@@ -173,11 +176,11 @@
 }
 
 /* font variants */
-.feedbackFontLato {
-  font-family: Lato, sans-serif;
+.feedbackFontNunito {
+  font-family: "Nunito Sans", sans-serif;
 }
-.feedbackFontCursive {
-  font-family: cursive;
+.feedbackFontRoboto {
+  font-family: "Roboto", sans-serif;
 }
 .feedbackFontGill {
   font-family: "Gill Sans", sans-serif;

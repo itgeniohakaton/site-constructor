@@ -1,7 +1,7 @@
 import { galleryTemplate } from "./galleryTemplates.js";
 
 export function addGallery(event, site) {
-  const header = event.target.header.value || "The img Gallery";
+  const header = event.target.header.value || "Галерея картинок";
 
   const images = [];
   images[0] = event.target.imgLink1.value || defaultImages[0];
@@ -11,7 +11,7 @@ export function addGallery(event, site) {
   images[4] = event.target.imgLink5.value || defaultImages[4];
 
   const background = event.target.background.value || "galleryBackgroundBlue";
-  const headerFont = event.target.headerFont.value || "galleryHeaderFontGill";
+  const headerFont = event.target.headerFont.value || "galleryHeaderFontNunito";
   const classes = background + " " + headerFont;
 
   site.insertAdjacentHTML(

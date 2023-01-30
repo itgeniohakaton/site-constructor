@@ -2,14 +2,14 @@ import { paragraphWithImgTemplate } from "./paragraphWithImgTemplates.js";
 
 export function addParagraphWithImg(event, site) {
   const imgLink = event.target.imgLink.value || defaultImgLink;
-  const header = event.target.header.value || "Paragraph header";
+  const header = event.target.header.value || "Заголовок абзаца";
   const paragraphText = event.target.text.value || defaultText;
 
   const backgroundStyle =
     event.target.paragraphWithImgBackground.value ||
     "paragraphWithImgBackgroundBlue";
   const fontFamly =
-    event.target.paragraphWithImgFont.value || "paragraphWithImgFontLato";
+    event.target.paragraphWithImgFont.value || "paragraphWithImgFontNunito";
   const imgAligment =
     event.target.paragraphWithImgAlignment.value || "paragraphWithImgRight";
   const imgSize =

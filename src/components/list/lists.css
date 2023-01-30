@@ -94,11 +94,11 @@
 }
 
 /* font variants */
-.listFontLato {
-  font-family: Lato, sans-serif;
+.listFontNunito {
+  font-family: "Nunito Sans", sans-serif;
 }
-.listFontCursive {
-  font-family: cursive;
+.listFontRoboto {
+  font-family: "Roboto", sans-serif;
 }
 .listFontGill {
   font-family: "Gill Sans", sans-serif;

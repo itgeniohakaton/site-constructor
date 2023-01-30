@@ -1,16 +1,16 @@
 header {
-  background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+  /* background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
   background-image: linear-gradient(
     to right bottom,
     rgb(126, 213, 111) rgb(40, 180, 133)
   );
-  background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa); */
   align-items: center;
   /* clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
   padding: 5% 15px; */
-  font-family: Lato, sans-serif;
-  font-family: cursive;
-  font-family: "Gill Sans", sans-serif;
+  /* font-family: 'Amatic SC', cursive;
+  font-family: 'Caveat', cursive; */
+  /* font-family: "Gill Sans", sans-serif; */
   text-align: justify;
   font-weight: 400;
   line-height: 1.2;
@@ -78,11 +78,11 @@ header h1 {
 }
 
 /* font variants */
-.headerFontLato {
-  font-family: Lato, sans-serif;
+.headerFontNunito {
+  font-family: "Nunito Sans", sans-serif;
 }
-.headerFontCursive {
-  font-family: cursive;
+.headerFontRoboto {
+  font-family: "Roboto", sans-serif;
 }
 .headerFontGill {
   font-family: "Gill Sans", sans-serif;

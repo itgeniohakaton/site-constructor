@@ -40,11 +40,11 @@
 }
 
 /* font variants */
-.paragraphWithImgFontLato {
-  font-family: Lato, sans-serif;
+.paragraphWithImgFontNunito {
+  font-family: "Nunito Sans", sans-serif;
 }
-.paragraphWithImgFontCursive {
-  font-family: cursive;
+.paragraphWithImgFontRoboto {
+  font-family: "Roboto", sans-serif;
 }
 .paragraphWithImgFontGill {
   font-family: "Gill Sans", sans-serif;

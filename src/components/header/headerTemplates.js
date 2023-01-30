@@ -38,8 +38,8 @@ export function headerMenuTemplate() {
 
             <select name="font" id="headerFont">
               <option value="">--Please choose an option--</option>
-              <option value="headerFontLato">Lato</option>
-              <option value="headerFontCursive">Cursive</option>
+              <option value="headerFontNunito">Nunito</option>
+              <option value="headerFontRoboto">Roboto</option>
               <option value="headerFontGill">Gill Sans</option>
             </select>
         
