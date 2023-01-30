@@ -20,17 +20,17 @@ export function listTemplate(classes, header, items, type) {
 
 export function listMenuTemplate() {
   return addAccordionWrapper(
-    "List",
+    "Список",
     `
   <form name="list" id="listCustomizer">
     <div class="flex direction-col">
-        <label for="header">List header:</label>
-        <input id="header" name="header" placeholder="List header" />
+        <label for="header">Заголовок списка:</label>
+        <input id="header" name="header" placeholder="Заголовок списка" />
 
-        <label for="listItem">List item (press enter to save list item):</label>
-        <input id="listItem" name="listItem" placeholder="List  item" />
+        <label for="listItem">Элемент списка (для сохранения элемента нажмите Enter):</label>
+        <input id="listItem" name="listItem" placeholder="Элемент списка" />
 
-        <label for="listType">Choose list type:</label>
+        <label for="listType">Выберите тип списка:</label>
         <select name="listType" id="listType">
             <option value="">--Please choose an option--</option>
             <option value="ol">Ordered list</option>
@@ -38,15 +38,15 @@ export function listMenuTemplate() {
         </select>
 
 
-        <label for="listBackground">Choose background:</label>
+        <label for="listBackground">Выберите фон:</label>
         <select name="listBackground" id="listBackground">
             <option value="">--Please choose an option--</option>
-            <option value="listBackgroundGreen">Green</option>
-            <option value="listBackgroundBlue">Blue</option>
-            <option value="listBackgroundOrange">Orange</option>
+            <option value="listBackgroundGreen">Зеленый</option>
+            <option value="listBackgroundBlue">Синий</option>
+            <option value="listBackgroundOrange">Оранжевый</option>
         </select>
 
-        <label for="listFont">Choose font family:</label>
+        <label for="listFont">Выберите шрифт:</label>
         <select name="listFont" id="listFont">
             <option value="">--Please choose an option--</option>
             <option value="listFontLato">Lato</option>
@@ -54,7 +54,7 @@ export function listMenuTemplate() {
             <option value="listFontGill">Gill Sans</option>
         </select>
         
-        <button type="submit" class="self-center">Add</button>
+        <button type="submit" class="self-center">Добавить</button>
     </div>
 
 </form>

@@ -20,31 +20,31 @@ export function paragraphWithImgTemplate(classes, imgLink, header, text) {
 
 export function paragraphWithImgMenuTemplate() {
   return addAccordionWrapper(
-    "Paragraph With Img",
+    "Абзац с картинкой",
     `
     <form name="paragraphWithImg" id="paragraphWithImgCustomizer">
       <div class="flex direction-col">
-        <label for="paragraphWithImgLink">Img link:</label>
-        <input id="paragraphWithImgLink" name="imgLink" placeholder="Img link" />
+        <label for="paragraphWithImgLink">Ссылка на картинку:</label>
+        <input id="paragraphWithImgLink" name="imgLink" placeholder="Ссылка на картинку" />
 
-        <label for="paragraphWithImgHeader">Header:</label>
-        <input id="paragraphWithImgHeader" name="header" placeholder="Header" />
+        <label for="paragraphWithImgHeader">Заголовок:</label>
+        <input id="paragraphWithImgHeader" name="header" placeholder="Заголовок" />
 
-        <label for="paragraphWithImgText">Paragraph text:</label>
-        <textarea id="paragraphWithImgText" name="text" placeholder="Paragraph text"></textarea> 
+        <label for="paragraphWithImgText">Текст параграфа:</label>
+        <textarea id="paragraphWithImgText" name="text" placeholder="Текст параграфа"></textarea> 
 
-        <label for="paragraphWithImgBackground">Choose background:</label>
+        <label for="paragraphWithImgBackground">Выберите фон:</label>
         <select
           name="paragraphWithImgBackground"
           id="paragraphWithImgBackground"
         >
           <option value="">--Please choose an option--</option>
-          <option value="paragraphWithImgBackgroundGreen">Green</option>
-          <option value="paragraphWithImgBackgroundBlue">Blue</option>
-          <option value="paragraphWithImgBackgroundOrange">Orange</option>
+          <option value="paragraphWithImgBackgroundGreen">Зеленый</option>
+          <option value="paragraphWithImgBackgroundBlue">Синий</option>
+          <option value="paragraphWithImgBackgroundOrange">Оранжевый</option>
         </select>
         
-        <label for="paragraphWithImgFont">Choose font family:</label>
+        <label for="paragraphWithImgFont">Выберите шрифт:</label>
         <select name="paragraphWithImgFont" id="paragraphWithImgFont">
           <option value="">--Please choose an option--</option>
           <option value="paragraphWithImgFontLato">Lato</option>
@@ -52,17 +52,17 @@ export function paragraphWithImgMenuTemplate() {
           <option value="paragraphWithImgFontGill">Gill Sans</option>
         </select>
         
-        <label for="paragraphWithImgAlignment">Choose img alignment:</label>
+        <label for="paragraphWithImgAlignment">Выравнивание картинки:</label>
         <select
           name="paragraphWithImgAlignment"
           id="paragraphWithImgAlignment"
         >
           <option value="">--Please choose an option--</option>
-          <option value="paragraphWithImgRight">Right</option>
-          <option value="paragraphWithImgLeft">Left</option>
+          <option value="paragraphWithImgRight">Справа</option>
+          <option value="paragraphWithImgLeft">Слева</option>
         </select>
         
-        <label for="paragraphWithImgSize">Choose img size:</label>
+        <label for="paragraphWithImgSize">Размер картинки:</label>
         <select name="paragraphWithImgSize" id="paragraphWithImgSize">
           <option value="">--Please choose an option--</option>
           <option value="paragraphWithImgSmall">Small</option>
@@ -70,7 +70,7 @@ export function paragraphWithImgMenuTemplate() {
           <option value="paragraphWithImgLarge">Large</option>
         </select>
         
-        <button type="submit" class="self-center">Add</button>
+        <button type="submit" class="self-center">Добавить</button>
       </div>
     
     </form>

@@ -19,22 +19,22 @@ export function headerMenuTemplate() {
     `<form name="header" id='headerCustomizer'>
         <div class="flex direction-col">
 
-            <label for="siteMainHeader">Site main header:</label>
-            <input id="siteMainHeader" name="siteMainHeader" placeholder="Site main header" />
+            <label for="siteMainHeader">Заголовок сайта:</label>
+            <input id="siteMainHeader" name="siteMainHeader" placeholder="Заголовок сайта" />
 
-            <label for="headerBackground">Choose background:</label>
+            <label for="headerBackground">Выберите фон:</label>
 
             <select
               name="background"
               id="headerBackground"
             >
               <option value="">--Please choose an option--</option>
-              <option value="headerBackgroundGreen">Green</option>
-              <option value="headerBackgroundBlue">Blue</option>
-              <option value="headerBackgroundOrange">Orange</option>
+              <option value="headerBackgroundGreen">Зеленый</option>
+              <option value="headerBackgroundBlue">Синий</option>
+              <option value="headerBackgroundOrange">Оранжевый</option>
             </select>
         
-            <label for="headerFont">Choose font family:</label>
+            <label for="headerFont">Выберите шрифт:</label>
 
             <select name="font" id="headerFont">
               <option value="">--Please choose an option--</option>
@@ -43,7 +43,7 @@ export function headerMenuTemplate() {
               <option value="headerFontGill">Gill Sans</option>
             </select>
         
-            <button type="submit" class="self-center">Add</button>
+            <button type="submit" class="self-center">Добавить</button>
         </div>
   </form>`
   );

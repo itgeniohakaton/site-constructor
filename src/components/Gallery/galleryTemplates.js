@@ -15,37 +15,37 @@ export function galleryTemplate(classes, images, header) {
 
 export function galleryMenuTemplate() {
   return addAccordionWrapper(
-    "Gallery",
+    "Галерея",
     `
   <form name="gallery" id="galleryCustomizer">
     <div class="flex direction-col">
 
    
-      <label for="galleryHeader">Header:</label>
-      <input id="gallery" name="header" placeholder="Gallery header" />
+      <label for="galleryHeader">Заголовок:</label>
+      <input id="gallery" name="header" placeholder="Заголовок" />
     
-      <label for="">Img links:</label>
-      <input id="galleryImgLink1" name="imgLink1" placeholder="Img link 1" />
+      <label for="">Ссылки на картинки:</label>
+      <input id="galleryImgLink1" name="imgLink1" placeholder="Ссылка на картинку 1" />
 
-      <input id="galleryImgLink2" name="imgLink2" placeholder="Img link 2" />
+      <input id="galleryImgLink2" name="imgLink2" placeholder="Ссылка на картинку 2" />
 
-      <input id="galleryImgLink3" name="imgLink3" placeholder="Img link 3" />
+      <input id="galleryImgLink3" name="imgLink3" placeholder="Ссылка на картинку 3" />
 
-      <input id="galleryImgLink4" name="imgLink4" placeholder="Img link 4" />
+      <input id="galleryImgLink4" name="imgLink4" placeholder="Ссылка на картинку 4" />
 
-      <input id="galleryImgLink5" name="imgLink5" placeholder="Img link 5" />
+      <input id="galleryImgLink5" name="imgLink5" placeholder="Ссылка на картинку 5" />
     
       
-        <label for="galleryBackground">Choose background:</label>
+        <label for="galleryBackground">Выберите фон:</label>
 
         <select name="background" id="galleryBackground">
           <option value="">--Please choose an option--</option>
-          <option value="galleryBackgroundGreen">Green</option>
-          <option value="galleryBackgroundBlue">Blue</option>
-          <option value="galleryBackgroundOrange">Orange</option>
+          <option value="galleryBackgroundGreen">Зеленый</option>
+          <option value="galleryBackgroundBlue">Синий</option>
+          <option value="galleryBackgroundOrange">Оранжевый</option>
         </select>
       
-        <label for="galleryHeaderFont">Choose font family:</label>
+        <label for="galleryHeaderFont">Выберите шрифт:</label>
 
         <select name="headerFont" id="galleryHeaderFont">
           <option value="">--Please choose an option--</option>
@@ -54,7 +54,7 @@ export function galleryMenuTemplate() {
           <option value="galleryHeaderFontGill">Gill Sans</option>
         </select>
       
-        <button type="submit" class="self-center">Add</button>
+        <button type="submit" class="self-center">Добавить</button>
     </div>
   </form>
   `

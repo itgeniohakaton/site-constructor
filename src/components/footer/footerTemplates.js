@@ -18,31 +18,31 @@ export function footerMenuTemplate() {
     <form name="footer" id="footerCustomizer">
       <div class="flex direction-col">
 
-      <label for="footerImgLink">Img link:</label>
-      <input id="footerImgLink" name="imgLink" placeholder="Img link" />
-      <label for="footerName">Name:</label>
-      <input id="footerName" name="name" placeholder="Name" />
-      <label for="footerPhone">Phone number:</label>
-      <input id="footerPhone" name="phone" placeholder="Phone number" />
-        <label for="footerBackground">Choose background:</label>
+      <label for="footerImgLink">Ссылка на картинку:</label>
+      <input id="footerImgLink" name="imgLink" placeholder="Ссылка на картинку" />
+      <label for="footerName">Имя:</label>
+      <input id="footerName" name="name" placeholder="Имя" />
+      <label for="footerPhone">Номер телефона:</label>
+      <input id="footerPhone" name="phone" placeholder="Номер телефона" />
+        <label for="footerBackground">Выберите фон:</label>
         <select
         name="background"
         id="footerBackground"
         >
           <option value="">--Please choose an option--</option>
-          <option value="footerBackgroundGreen">Green</option>
-          <option value="footerBackgroundBlue">Blue</option>
-          <option value="footerBackgroundOrange">Orange</option>
+          <option value="footerBackgroundGreen">Зеленый</option>
+          <option value="footerBackgroundBlue">Синий</option>
+          <option value="footerBackgroundOrange">Оранжевый</option>
         </select>
         
-        <label for="footerFont">Choose font family:</label>
+        <label for="footerFont">Выберите шрифт:</label>
         <select name="font" id="footerFont">
           <option value="">--Please choose an option--</option>
           <option value="footerFontLato">Lato</option>
           <option value="footerFontCursive">Cursive</option>
           <option value="footerFontGill">Gill Sans</option>
         </select>
-        <button type="submit" class="self-center">Add</button>
+        <button type="submit" class="self-center">Добавить</button>
       </div>
     </form>
   `

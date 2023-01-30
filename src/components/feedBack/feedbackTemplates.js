@@ -34,30 +34,30 @@ export function feedbackTemplate(classes) {
 
 export function feedbackMenuTemplate() {
   return addAccordionWrapper(
-    "Feedback form",
+    "Форма обратной связи",
     `
     <form name="feedback" id="feedbackCustomizer">
       <div class="flex direction-col">
 
-        <label for="feedbackBackground">Choose background:</label>
+        <label for="feedbackBackground">Выберите фон:</label>
         <select
         name="background"
         id="feedbackBackground"
         >
           <option value="">--Please choose an option--</option>
-          <option value="feedbackBackgroundGreen">Green</option>
-          <option value="feedbackBackgroundBlue">Blue</option>
-          <option value="feedbackBackgroundOrange">Orange</option>
+          <option value="feedbackBackgroundGreen">Зеленый</option>
+          <option value="feedbackBackgroundBlue">Синий</option>
+          <option value="feedbackBackgroundOrange">Оранжевый</option>
         </select>
         
-        <label for="feedbackFont">Choose font family:</label>
+        <label for="feedbackFont">Выберите шрифт:</label>
         <select name="font" id="feedbackFont">
           <option value="">--Please choose an option--</option>
           <option value="feedbackFontLato">Lato</option>
           <option value="feedbackFontCursive">Cursive</option>
           <option value="feedbackFontGill">Gill Sans</option>
         </select>
-        <button type="submit" class="self-center">Add</button>
+        <button type="submit" class="self-center">Добавить</button>
       </div>
     </form>
   `
