@@ -55,7 +55,7 @@ export function feedbackMenuTemplate() {
           <option value="">--Please choose an option--</option>
           <option value="feedbackFontLato">Lato</option>
           <option value="feedbackFontCursive">Cursive</option>
-          <option value="paragraphWithImgFontGill">Gill Sans</option>
+          <option value="feedbackFontGill">Gill Sans</option>
         </select>
         <button type="submit" class="self-center">Add</button>
       </div>
