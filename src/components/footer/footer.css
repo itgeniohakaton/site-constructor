@@ -1,0 +1,83 @@
+.footer {
+  overflow: hidden;
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(160, 194, 128),
+    rgb(40, 180, 133)
+  );
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer a {
+  /* float: left; */
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 25px;
+  line-height: 25px;
+  border-radius: 4px;
+  transition: all 1s;
+}
+.footerImgWrapper {
+  width: 150px;
+}
+.footer img {
+  width: 100%;
+}
+
+.footer a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.footer .footer-right a:hover {
+  background-color: white;
+  transition: all 1s;
+}
+
+.footer a.active {
+  color: white;
+}
+
+.footer-right {
+  /* float: right; */
+}
+
+/* background variants */
+.footerBackgroundGreen {
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(126, 213, 111),
+    rgb(40, 180, 133)
+  );
+}
+.footerBackgroundBlue {
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
+}
+.footerBackgroundOrange {
+  background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+}
+.footerBackgroundGreen .footer-right a:hover {
+  color: rgb(40, 180, 133);
+}
+.footerBackgroundBlue .footer-right a:hover {
+  color: #5643fa;
+}
+.footerBackgroundOrange .footer-right a:hover {
+  color: #ff7730;
+}
+
+/* font variants */
+.footerFontLato {
+  font-family: Lato, sans-serif;
+}
+.footerFontCursive {
+  font-family: cursive;
+}
+.footerFontGill {
+  font-family: "Gill Sans", sans-serif;
+}

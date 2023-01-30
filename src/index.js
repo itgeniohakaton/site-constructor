@@ -11,6 +11,10 @@ import { addListItem } from "./components/list/listUtils.js";
 import { addAccordion } from "./components/accordion/accordion.js";
 import { hamdurgerMenuCustomizerTemplate } from "./components/hamburgerMenu/hamburgerMenuTemplates.js";
 import { addHamburgerMenu } from "./components/hamburgerMenu/hamburgerMenuUtils.js";
+import { footerMenuTemplate } from "./components/footer/footerTemplates.js";
+import { addFooter } from "./components/footer/footerUtils.js";
+import { headerMenuTemplate } from "./components/header/headerTemplates.js";
+import { addHeader } from "./components/header/headerUtils.js";
 const customizer = document.getElementById("customizer");
 
 //adding customizers
@@ -24,6 +28,10 @@ customizer.insertAdjacentHTML("beforeend", feedbackMenuTemplate());
 customizer.insertAdjacentHTML("beforeend", listMenuTemplate());
 //for hamburger menu
 customizer.insertAdjacentHTML("beforeend", hamdurgerMenuCustomizerTemplate());
+//for footer
+customizer.insertAdjacentHTML("beforeend", footerMenuTemplate());
+//for header
+customizer.insertAdjacentHTML("afterbegin", headerMenuTemplate());
 
 //adding action buttons
 const actionButtons = document.getElementById("action-buttons");
@@ -85,6 +93,17 @@ hamburgerMenuCustomizer.addEventListener("submit", (event) => {
   addHamburgerMenu(event, site);
 });
 
+const footerCustomizer = document.getElementById("footerCustomizer");
+footerCustomizer.addEventListener("submit", (event) => {
+  event.preventDefault();
+  addFooter(event, site);
+});
+
+const headerCustomizer = document.getElementById("headerCustomizer");
+headerCustomizer.addEventListener("submit", (event) => {
+  event.preventDefault();
+  addHeader(event, site);
+});
 const scatchList = document.querySelector("#site");
 
 const deleteBtn = (document.getElementById(
