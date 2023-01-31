@@ -4,7 +4,7 @@ import { actionButtonsTemplate } from "./components/actionButtons/actionButtonsT
 import { galleryMenuTemplate } from "./components/gallery/galleryTemplates.js";
 import { addGallery } from "./components/gallery/galleryUtils.js";
 import { feedbackMenuTemplate } from "./components/feedback/feedbackTemplates.js";
-import { addFeedback } from "./components/feedback/feedbackUtils.js";
+import { addFeedback } from "./components/feedBack/feedbackUtils.js";
 import { addList } from "./components/list/listUtils.js";
 import { listMenuTemplate } from "./components/list/listTemplates.js";
 import { addListItem } from "./components/list/listUtils.js";
