@@ -4,7 +4,7 @@ body {
   margin: 0;
 }
 #nav {
-  height: 7vh;
+  /* height: 7vh; */
   border: 1px solid lightgrey;
   font-size: 20px;
   font-weight: bold;
@@ -20,14 +20,14 @@ body {
   border-radius: 3px;
   padding: 5px;
   text-decoration: none;
-  transition: all 1s;
+  transition: background-color 1s;
 }
 .menu-button:visited,
 .menu-button:hover {
   color: black;
   background-color: #dfdddd;
   cursor: pointer;
-  transition: all 1s;
+  transition: background-color 1s;
 }
 
 #app {

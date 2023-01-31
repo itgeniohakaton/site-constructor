@@ -63,13 +63,13 @@ a {
   color: white;
   background-color: rgba(255, 255, 255, 0.099);
   text-decoration: none;
-  transition: all 1s;
+  transition: background-color 1s;
 }
 a:hover {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.497);
   color: black;
-  transition: all 1s;
+  transition: background-color 1s;
 }
 
 .send {
@@ -80,7 +80,11 @@ a:hover {
 }
 .poll {
   display: flex;
-  flex-direction: column;
-  margin-left: 50px;
+  /* flex-direction: column; */
+  /* margin-left: 50px; */
   margin-bottom: 20px;
+}
+
+.poll div {
+  margin-right: 8px;
 }
